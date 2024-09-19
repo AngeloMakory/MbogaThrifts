@@ -1,0 +1,266 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  }
+  .banner{
+    width:100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(102, 255, 0, 0.253),yellow), url(mboga_fruits.jpg);
+    background-size:cover;
+    background-position: center;
+  }
+  /*bannerindex covers index page, about, contact, login, register, and admin pages.*/
+  .bannerindex{
+    width: 100%;
+    height: 1200px;
+    background-image: linear-gradient(rgba(102, 255, 0, 0.253),yellow), url(mboga_fruits.jpg);
+    background-size:cover;
+    background-position: center;
+    overflow: auto;
+  
+  }
+  .navbar{
+    width: 100%;
+    margin:auto;
+    padding: 35px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .logo{
+    width:150px;
+    cursor:pointer;
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:20px;
+    position:relative;
+  }
+  .navbar ul li a{
+    text-decoration:none;
+    color:white;
+    text-transform:uppercase;
+  }
+  .navbar ul li::after{
+    content:'';
+    height: 3px;
+    width:100%;
+    position: absolute;
+    background:rgba(251, 255, 0, 0.705);
+    left:0;
+    bottom:-5px;
+    transition:0.5s;
+  }
+  .navbar ul li:hover::after{
+    width:1%;
+  }
+  .content{
+    width:100;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50);
+    align-items: center;
+  
+  
+  }
+  .content h1{
+    font-size: 40px;
+    margin-top:15px;
+  
+  }
+  .content p{
+    font-size: 15px;
+  }
+  button{
+    cursor:pointer;
+    color:black;
+    font-weight: bold;
+    text-align:center;
+    margin:20px 10px;
+    padding: 15px;
+    border:2px solid black;
+    background-color: transparent;
+    border-radius: 4px;
+  }
+  footer{
+    background-color:yellow;
+    text-align: center;
+    font-size: x-small;
+    font-weight: lighter;
+    height: 40px;
+    letter-spacing: 1px;
+    
+  }
+  .Registerbox{
+      border-radius : 6px;
+  }
+  
+  select{
+    cursor: pointer;
+    background-color: transparent;
+    width:100px;
+    height: 40px;
+  }
+  
+  option{
+    text-align: center;
+    font-weight: bold;
+  }
+  form{
+    background-color: linear-gradient(rgba(0,0,0,0), yellow);
+  }
+  input{
+    background-color:rgba(0,0,0,0);
+  }
+  input:hover{
+    size: 50px;
+  }
+  .Registerbox .radios:hover{
+    cursor:pointer;
+  }
+  .submit{
+    height: 50px;
+    width: 100px;
+    border-radius:10px ;
+    background-color: transparent;
+    font-style: italic;
+    font-size: large;
+  } 
+  .submit:hover{
+    cursor:pointer;
+    size: 80px;
+    
+  }
+  .guest{
+    font-size: 10px;
+  }
+  
+  .catalogue{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 10px;
+  
+  }
+  .product{
+    position: relative;
+    background-color: rgba(10, 10, 10, 0.616);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color:yellow;
+    font-style:italic;
+    
+  }
+  .product button{
+    border-radius: 4px;
+    border-color: transparent;
+    font-style: initial;
+    background-color: yellow;
+  }
+  .product button:hover{
+    cursor:pointer;
+    background-color: goldenrod;
+    height: -5px;
+    width: -10px;
+  }
+  .product:hover:hover{
+    top: -10px;
+    color: lightslategray;
+  }
+  .product img{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+  }
+  .details{
+    line-height: 5px;
+  }
+  footer a::after{
+    color: black;
+  }
+  .product button span{
+    font-size: x-small;
+  }
+  .product .originalprice{
+    color: red;
+    text-decoration:line-through;
+  }
+  .product .discountprice{
+    color: green;
+    text-decoration: bold;
+  }
+  .product .user{
+    font-style: italic;
+    text-align: right;
+  }
+  .admin button{
+    height: 200px;
+    width: 500px;
+    padding-top: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 0, 0.498);
+    border-color: transparent;
+    font-size: 50px;
+    font-style: italic;
+  }
+  .admin button:hover{
+    cursor:pointer;
+    background-color: yellow;
+    border-color: black;
+  }
+  .contacts img{
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+  }
+  table{
+    /* border-style: dashed;
+    border-radius: 5px; */
+    cursor: pointer;
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 1em;
+    min-width: 500px;
+    align-content: center;
+  }
+  table th, td {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  .delete{
+    font-style: italic;
+    color: red;
+  }
+  .update{
+    font-style: italic;
+    color: green;
+  }
+  /* .loginbox{
+    border-radius: 6px;
+    background-color: yellow;
+  }
+  */
+  input{
+    border-radius: 7.5px;
+    height: 3em;
+    border-color: black;
+  }
+  input:hover{
+    background-color: rgba(208, 255, 0, 0.699);
+  }
+  .choice{
+    border-radius: 8px;
+    height: 4em;
+    cursor: pointer;
+  }
+  
